@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72633779139A8343003219E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72633778139A8343003219E9 /* UIKit.framework */; };
+		7263377B139A8343003219E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7263377A139A8343003219E9 /* Foundation.framework */; };
+		7263377D139A8343003219E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7263377C139A8343003219E9 /* CoreGraphics.framework */; };
+		72633783139A8343003219E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72633781139A8343003219E9 /* InfoPlist.strings */; };
+		72633786139A8343003219E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72633785139A8343003219E9 /* main.m */; };
+		72633789139A8343003219E9 /* freefrootAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72633788139A8343003219E9 /* freefrootAppDelegate.m */; };
+		7263378C139A8343003219E9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7263378A139A8343003219E9 /* MainWindow.xib */; };
+		7263378F139A8343003219E9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7263378E139A8343003219E9 /* RootViewController.m */; };
+		72633792139A8343003219E9 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72633790139A8343003219E9 /* RootViewController.xib */; };
+		72633799139A8343003219E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72633778139A8343003219E9 /* UIKit.framework */; };
+		7263379A139A8343003219E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7263377A139A8343003219E9 /* Foundation.framework */; };
+		7263379B139A8343003219E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7263377C139A8343003219E9 /* CoreGraphics.framework */; };
+		726337A3139A8343003219E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 726337A1139A8343003219E9 /* InfoPlist.strings */; };
+		726337A6139A8343003219E9 /* freefrootTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 726337A5139A8343003219E9 /* freefrootTests.h */; };
+		726337A8139A8343003219E9 /* freefrootTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 726337A7139A8343003219E9 /* freefrootTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7263379C139A8343003219E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7263376B139A8343003219E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72633773139A8343003219E9;
+			remoteInfo = freefroot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		72633774139A8343003219E9 /* freefroot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = freefroot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72633778139A8343003219E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7263377A139A8343003219E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7263377C139A8343003219E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		72633780139A8343003219E9 /* freefroot-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "freefroot-Info.plist"; sourceTree = "<group>"; };
+		72633782139A8343003219E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72633784139A8343003219E9 /* freefroot-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "freefroot-Prefix.pch"; sourceTree = "<group>"; };
+		72633785139A8343003219E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		72633787139A8343003219E9 /* freefrootAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = freefrootAppDelegate.h; sourceTree = "<group>"; };
+		72633788139A8343003219E9 /* freefrootAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = freefrootAppDelegate.m; sourceTree = "<group>"; };
+		7263378B139A8343003219E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		7263378D139A8343003219E9 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		7263378E139A8343003219E9 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		72633791139A8343003219E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		72633798139A8343003219E9 /* freefrootTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = freefrootTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		726337A0139A8343003219E9 /* freefrootTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "freefrootTests-Info.plist"; sourceTree = "<group>"; };
+		726337A2139A8343003219E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		726337A4139A8343003219E9 /* freefrootTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "freefrootTests-Prefix.pch"; sourceTree = "<group>"; };
+		726337A5139A8343003219E9 /* freefrootTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = freefrootTests.h; sourceTree = "<group>"; };
+		726337A7139A8343003219E9 /* freefrootTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = freefrootTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72633771139A8343003219E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72633779139A8343003219E9 /* UIKit.framework in Frameworks */,
+				7263377B139A8343003219E9 /* Foundation.framework in Frameworks */,
+				7263377D139A8343003219E9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72633794139A8343003219E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72633799139A8343003219E9 /* UIKit.framework in Frameworks */,
+				7263379A139A8343003219E9 /* Foundation.framework in Frameworks */,
+				7263379B139A8343003219E9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72633769139A8343003219E9 = {
+			isa = PBXGroup;
+			children = (
+				7263377E139A8343003219E9 /* freefroot */,
+				7263379E139A8343003219E9 /* freefrootTests */,
+				72633777139A8343003219E9 /* Frameworks */,
+				72633775139A8343003219E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72633775139A8343003219E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72633774139A8343003219E9 /* freefroot.app */,
+				72633798139A8343003219E9 /* freefrootTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72633777139A8343003219E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72633778139A8343003219E9 /* UIKit.framework */,
+				7263377A139A8343003219E9 /* Foundation.framework */,
+				7263377C139A8343003219E9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7263377E139A8343003219E9 /* freefroot */ = {
+			isa = PBXGroup;
+			children = (
+				72633787139A8343003219E9 /* freefrootAppDelegate.h */,
+				72633788139A8343003219E9 /* freefrootAppDelegate.m */,
+				7263378A139A8343003219E9 /* MainWindow.xib */,
+				7263378D139A8343003219E9 /* RootViewController.h */,
+				7263378E139A8343003219E9 /* RootViewController.m */,
+				72633790139A8343003219E9 /* RootViewController.xib */,
+				7263377F139A8343003219E9 /* Supporting Files */,
+			);
+			path = freefroot;
+			sourceTree = "<group>";
+		};
+		7263377F139A8343003219E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				72633780139A8343003219E9 /* freefroot-Info.plist */,
+				72633781139A8343003219E9 /* InfoPlist.strings */,
+				72633784139A8343003219E9 /* freefroot-Prefix.pch */,
+				72633785139A8343003219E9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7263379E139A8343003219E9 /* freefrootTests */ = {
+			isa = PBXGroup;
+			children = (
+				726337A5139A8343003219E9 /* freefrootTests.h */,
+				726337A7139A8343003219E9 /* freefrootTests.m */,
+				7263379F139A8343003219E9 /* Supporting Files */,
+			);
+			path = freefrootTests;
+			sourceTree = "<group>";
+		};
+		7263379F139A8343003219E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				726337A0139A8343003219E9 /* freefrootTests-Info.plist */,
+				726337A1139A8343003219E9 /* InfoPlist.strings */,
+				726337A4139A8343003219E9 /* freefrootTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72633773139A8343003219E9 /* freefroot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 726337AB139A8343003219E9 /* Build configuration list for PBXNativeTarget "freefroot" */;
+			buildPhases = (
+				72633770139A8343003219E9 /* Sources */,
+				72633771139A8343003219E9 /* Frameworks */,
+				72633772139A8343003219E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = freefroot;
+			productName = freefroot;
+			productReference = 72633774139A8343003219E9 /* freefroot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		72633797139A8343003219E9 /* freefrootTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 726337AE139A8343003219E9 /* Build configuration list for PBXNativeTarget "freefrootTests" */;
+			buildPhases = (
+				72633793139A8343003219E9 /* Sources */,
+				72633794139A8343003219E9 /* Frameworks */,
+				72633795139A8343003219E9 /* Resources */,
+				72633796139A8343003219E9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7263379D139A8343003219E9 /* PBXTargetDependency */,
+			);
+			name = freefrootTests;
+			productName = freefrootTests;
+			productReference = 72633798139A8343003219E9 /* freefrootTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7263376B139A8343003219E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = ashramsey;
+			};
+			buildConfigurationList = 7263376E139A8343003219E9 /* Build configuration list for PBXProject "freefroot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 72633769139A8343003219E9;
+			productRefGroup = 72633775139A8343003219E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72633773139A8343003219E9 /* freefroot */,
+				72633797139A8343003219E9 /* freefrootTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72633772139A8343003219E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72633783139A8343003219E9 /* InfoPlist.strings in Resources */,
+				7263378C139A8343003219E9 /* MainWindow.xib in Resources */,
+				72633792139A8343003219E9 /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72633795139A8343003219E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726337A3139A8343003219E9 /* InfoPlist.strings in Resources */,
+				726337A6139A8343003219E9 /* freefrootTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72633796139A8343003219E9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72633770139A8343003219E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72633786139A8343003219E9 /* main.m in Sources */,
+				72633789139A8343003219E9 /* freefrootAppDelegate.m in Sources */,
+				7263378F139A8343003219E9 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72633793139A8343003219E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726337A8139A8343003219E9 /* freefrootTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7263379D139A8343003219E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72633773139A8343003219E9 /* freefroot */;
+			targetProxy = 7263379C139A8343003219E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		72633781139A8343003219E9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72633782139A8343003219E9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7263378A139A8343003219E9 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7263378B139A8343003219E9 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		72633790139A8343003219E9 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72633791139A8343003219E9 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+		726337A1139A8343003219E9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				726337A2139A8343003219E9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		726337A9139A8343003219E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		726337AA139A8343003219E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		726337AC139A8343003219E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "freefroot/freefroot-Prefix.pch";
+				INFOPLIST_FILE = "freefroot/freefroot-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		726337AD139A8343003219E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "freefroot/freefroot-Prefix.pch";
+				INFOPLIST_FILE = "freefroot/freefroot-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		726337AF139A8343003219E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/freefroot.app/freefroot";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "freefrootTests/freefrootTests-Prefix.pch";
+				INFOPLIST_FILE = "freefrootTests/freefrootTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		726337B0139A8343003219E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/freefroot.app/freefroot";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "freefrootTests/freefrootTests-Prefix.pch";
+				INFOPLIST_FILE = "freefrootTests/freefrootTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7263376E139A8343003219E9 /* Build configuration list for PBXProject "freefroot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				726337A9139A8343003219E9 /* Debug */,
+				726337AA139A8343003219E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		726337AB139A8343003219E9 /* Build configuration list for PBXNativeTarget "freefroot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				726337AC139A8343003219E9 /* Debug */,
+				726337AD139A8343003219E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		726337AE139A8343003219E9 /* Build configuration list for PBXNativeTarget "freefrootTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				726337AF139A8343003219E9 /* Debug */,
+				726337B0139A8343003219E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7263376B139A8343003219E9 /* Project object */;
+}
