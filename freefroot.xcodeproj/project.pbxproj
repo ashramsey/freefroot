@@ -22,6 +22,11 @@
 		726337A3139A8343003219E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 726337A1139A8343003219E9 /* InfoPlist.strings */; };
 		726337A6139A8343003219E9 /* freefrootTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 726337A5139A8343003219E9 /* freefrootTests.h */; };
 		726337A8139A8343003219E9 /* freefrootTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 726337A7139A8343003219E9 /* freefrootTests.m */; };
+		7274D547139A924800B97A36 /* RSSDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 7274D540139A924800B97A36 /* RSSDB.m */; };
+		7274D548139A924800B97A36 /* SQLiteDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 7274D543139A924800B97A36 /* SQLiteDB.m */; };
+		7274D549139A924800B97A36 /* SandboxUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7274D546139A924800B97A36 /* SandboxUtilities.m */; };
+		7274D54C139A927C00B97A36 /* ffrss.db in Resources */ = {isa = PBXBuildFile; fileRef = 7274D54B139A927C00B97A36 /* ffrss.db */; };
+		7274D54E139A928E00B97A36 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7274D54D139A928E00B97A36 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,14 @@
 		726337A4139A8343003219E9 /* freefrootTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "freefrootTests-Prefix.pch"; sourceTree = "<group>"; };
 		726337A5139A8343003219E9 /* freefrootTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = freefrootTests.h; sourceTree = "<group>"; };
 		726337A7139A8343003219E9 /* freefrootTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = freefrootTests.m; sourceTree = "<group>"; };
+		7274D53F139A924800B97A36 /* RSSDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSDB.h; sourceTree = "<group>"; };
+		7274D540139A924800B97A36 /* RSSDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSDB.m; sourceTree = "<group>"; };
+		7274D542139A924800B97A36 /* SQLiteDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteDB.h; sourceTree = "<group>"; };
+		7274D543139A924800B97A36 /* SQLiteDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteDB.m; sourceTree = "<group>"; };
+		7274D545139A924800B97A36 /* SandboxUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandboxUtilities.h; sourceTree = "<group>"; };
+		7274D546139A924800B97A36 /* SandboxUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SandboxUtilities.m; sourceTree = "<group>"; };
+		7274D54B139A927C00B97A36 /* ffrss.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = ffrss.db; sourceTree = "<group>"; };
+		7274D54D139A928E00B97A36 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7274D54E139A928E00B97A36 /* libsqlite3.dylib in Frameworks */,
 				72633779139A8343003219E9 /* UIKit.framework in Frameworks */,
 				7263377B139A8343003219E9 /* Foundation.framework in Frameworks */,
 				7263377D139A8343003219E9 /* CoreGraphics.framework in Frameworks */,
@@ -84,6 +98,7 @@
 		72633769139A8343003219E9 = {
 			isa = PBXGroup;
 			children = (
+				7274D54D139A928E00B97A36 /* libsqlite3.dylib */,
 				7263377E139A8343003219E9 /* freefroot */,
 				7263379E139A8343003219E9 /* freefrootTests */,
 				72633777139A8343003219E9 /* Frameworks */,
@@ -113,6 +128,7 @@
 		7263377E139A8343003219E9 /* freefroot */ = {
 			isa = PBXGroup;
 			children = (
+				7274D53D139A924800B97A36 /* Libraries */,
 				72633787139A8343003219E9 /* freefrootAppDelegate.h */,
 				72633788139A8343003219E9 /* freefrootAppDelegate.m */,
 				7263378A139A8343003219E9 /* MainWindow.xib */,
@@ -127,6 +143,7 @@
 		7263377F139A8343003219E9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7274D54B139A927C00B97A36 /* ffrss.db */,
 				72633780139A8343003219E9 /* freefroot-Info.plist */,
 				72633781139A8343003219E9 /* InfoPlist.strings */,
 				72633784139A8343003219E9 /* freefroot-Prefix.pch */,
@@ -153,6 +170,43 @@
 				726337A4139A8343003219E9 /* freefrootTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7274D53D139A924800B97A36 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7274D53E139A924800B97A36 /* RSSDB */,
+				7274D541139A924800B97A36 /* SQLiteDB */,
+				7274D544139A924800B97A36 /* Utilities */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		7274D53E139A924800B97A36 /* RSSDB */ = {
+			isa = PBXGroup;
+			children = (
+				7274D53F139A924800B97A36 /* RSSDB.h */,
+				7274D540139A924800B97A36 /* RSSDB.m */,
+			);
+			path = RSSDB;
+			sourceTree = "<group>";
+		};
+		7274D541139A924800B97A36 /* SQLiteDB */ = {
+			isa = PBXGroup;
+			children = (
+				7274D542139A924800B97A36 /* SQLiteDB.h */,
+				7274D543139A924800B97A36 /* SQLiteDB.m */,
+			);
+			path = SQLiteDB;
+			sourceTree = "<group>";
+		};
+		7274D544139A924800B97A36 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7274D545139A924800B97A36 /* SandboxUtilities.h */,
+				7274D546139A924800B97A36 /* SandboxUtilities.m */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +282,7 @@
 				72633783139A8343003219E9 /* InfoPlist.strings in Resources */,
 				7263378C139A8343003219E9 /* MainWindow.xib in Resources */,
 				72633792139A8343003219E9 /* RootViewController.xib in Resources */,
+				7274D54C139A927C00B97A36 /* ffrss.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +321,9 @@
 				72633786139A8343003219E9 /* main.m in Sources */,
 				72633789139A8343003219E9 /* freefrootAppDelegate.m in Sources */,
 				7263378F139A8343003219E9 /* RootViewController.m in Sources */,
+				7274D547139A924800B97A36 /* RSSDB.m in Sources */,
+				7274D548139A924800B97A36 /* SQLiteDB.m in Sources */,
+				7274D549139A924800B97A36 /* SandboxUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +504,7 @@
 				726337AD139A8343003219E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		726337AE139A8343003219E9 /* Build configuration list for PBXNativeTarget "freefrootTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +513,7 @@
 				726337B0139A8343003219E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
