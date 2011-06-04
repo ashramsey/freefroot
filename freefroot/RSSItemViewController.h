@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "RSSDB.h"
+#import "SandboxUtilities.h"
 
 @interface RSSItemViewController : UITableViewController <NSXMLParserDelegate> {
     RSSDB *rssDB;
@@ -29,5 +30,13 @@
 
 @property (nonatomic, retain) NSURLConnection *rssConnection;
 @property (nonatomic, retain) NSMutableData *rssData;
+
+// Error handling
+- (void)handleError:(NSError *)error;
+- (void)errorAlert:(NSString *) message;
+
+// Support methods
+- (void) loadRSSFeed;
+
 
 @end
