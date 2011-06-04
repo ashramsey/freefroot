@@ -27,6 +27,7 @@
 		7274D549139A924800B97A36 /* SandboxUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7274D546139A924800B97A36 /* SandboxUtilities.m */; };
 		7274D54C139A927C00B97A36 /* ffrss.db in Resources */ = {isa = PBXBuildFile; fileRef = 7274D54B139A927C00B97A36 /* ffrss.db */; };
 		7274D54E139A928E00B97A36 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7274D54D139A928E00B97A36 /* libsqlite3.dylib */; };
+		72776193139A9508006A0E46 /* RSSItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72776192139A9508006A0E46 /* RSSItemViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		7274D546139A924800B97A36 /* SandboxUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SandboxUtilities.m; sourceTree = "<group>"; };
 		7274D54B139A927C00B97A36 /* ffrss.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = ffrss.db; sourceTree = "<group>"; };
 		7274D54D139A928E00B97A36 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		72776191139A9508006A0E46 /* RSSItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSItemViewController.h; sourceTree = "<group>"; };
+		72776192139A9508006A0E46 /* RSSItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSItemViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 				7263378D139A8343003219E9 /* RootViewController.h */,
 				7263378E139A8343003219E9 /* RootViewController.m */,
 				72633790139A8343003219E9 /* RootViewController.xib */,
+				72776191139A9508006A0E46 /* RSSItemViewController.h */,
+				72776192139A9508006A0E46 /* RSSItemViewController.m */,
 				7263377F139A8343003219E9 /* Supporting Files */,
 			);
 			path = freefroot;
@@ -324,6 +329,7 @@
 				7274D547139A924800B97A36 /* RSSDB.m in Sources */,
 				7274D548139A924800B97A36 /* SQLiteDB.m in Sources */,
 				7274D549139A924800B97A36 /* SandboxUtilities.m in Sources */,
+				72776193139A9508006A0E46 /* RSSItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

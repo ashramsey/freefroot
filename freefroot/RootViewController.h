@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "RSSDB.h"
+#import "RSSItemViewController.h"
 
 @interface RootViewController : UITableViewController {
     RSSDB *rssDB;

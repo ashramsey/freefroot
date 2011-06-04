@@ -121,16 +121,20 @@
  }
  */
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self loadFeedIDsIfEmpty];
+    
+    // clean up aged feed items from the database
+    [rssDB deleteOldItems:[feedIDs objectAtIndex:indexPath.row]];
+    
+    // create the item view controller
+    RSSItemViewController *itemViewController = [[RSSItemViewController alloc] initWithStyle:UITableViewStylePlain];
+    itemViewController.rssDB = rssDB;
+    itemViewController.feedID = [feedIDs objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:itemViewController animated:YES];
+    [itemViewController release];
 }
+
 
 - (void)didReceiveMemoryWarning
 {
