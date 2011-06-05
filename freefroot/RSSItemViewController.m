@@ -57,6 +57,51 @@ static NSString * const kDBFeedDescKey = @"desc";
     return YES;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    // NSLog(@"%s", __FUNCTION__);
+    self.itemRowIDs = [rssDB getItemIDs:feedID];
+    return [itemRowIDs count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"ItemCell";
+    
+    // set up the cell with the subtitle style
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+    }
+    
+    // Show the title in the cell
+    NSNumber *itemID = [self.itemRowIDs objectAtIndex:indexPath.row];
+    NSDictionary * thisFeedItem = [rssDB getItemRow:itemID];
+    
+    // Clever variable font size trick
+    CGFloat systemFontSize = [UIFont labelFontSize];
+    CGFloat headFontSize = systemFontSize * .9;
+    CGFloat smallFontSize = systemFontSize * .8;
+    CGFloat widthOfCell = [tableView rectForRowAtIndexPath:indexPath].size.width - 40.0;
+    
+    NSString * itemText = [thisFeedItem objectForKey:kDBItemTitleKey];
+    if (itemText) {
+        [cell.textLabel setNumberOfLines:2];
+        if ([itemText sizeWithFont:[UIFont boldSystemFontOfSize:headFontSize]].width > widthOfCell)
+            [cell.textLabel setFont:[UIFont boldSystemFontOfSize:smallFontSize]];
+        else
+            [cell.textLabel setFont:[UIFont boldSystemFontOfSize:headFontSize]];
+        
+        [cell.textLabel setText:itemText];
+    }
+    
+    // Format the date -- this goes in the detailTextLabel property, which is the "subtitle" of the cell
+    [cell.detailTextLabel setFont:[UIFont systemFontOfSize:smallFontSize]];
+    [cell.detailTextLabel setText:
+     [self dateToLocalizedString:[self SQLDateToDate:[thisFeedItem valueForKey:kDBItemPubDateKey]]]
+     ];
+    
+    return cell;
+}
+
 #pragma mark -
 #pragma mark Support methods
 
@@ -100,7 +145,7 @@ static NSString * const kDBFeedDescKey = @"desc";
 // --> This method runs in the main thread <--
 // This is called from the parser thread with batches of parsed objects. 
 - (void)updateDBWithItems:(NSArray *)items {
-    NSLog(@"updateDBWithItems (%d)", [items count]);
+    // NSLog(@"updateDBWithItems (%d)", [items count]);
     for ( NSDictionary * item in items ) { // add rows to the item table
         [rssDB addItemRow:[NSDictionary dictionaryWithObjectsAndKeys:
                            [item valueForKey:kItemFeedIDKey], kDBItemFeedIDKey,
